@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+     <title>exercise2 </title>
+</head>
+<body>
+    <script>
+        function getBrowserName(userAgent) {
+            if (userAgent.includes("Firefox")) {
+                return "Mozilla Firefox";
+            } else if (userAgent.includes("SamsungBrowser")) {
+                return "Samsung Internet";
+            } else if (userAgent.includes("Opera") || userAgent.includes("OPR")) {
+                return "Opera";
+            } else if (userAgent.includes("Edge")) {
+                return "Microsoft Edge";
+            } else if (userAgent.includes("Chrome")) {
+                return "Google Chrome";
+            } else {
+                return "Unknown Browser";
+            }
+        }
+        var browserName = getBrowserName(navigator.userAgent);
+        document.write("<p>You are using: " + browserName + "</p>");
+    </script>
+
+</body>
+</html>

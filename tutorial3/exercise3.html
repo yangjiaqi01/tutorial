@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 3</title>
+    <script src="randominteger.js" defer></script>
+</head>
+<body>
+    <h1>Random Integer Generator</h1>
+    <button id="generateBtn">Generate Random Integer</button>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('generateBtn').addEventListener('click', function() {
+            var randomNumber = randomInt(); // Call the randomInt function
+            document.getElementById('result').textContent = 'Generated number: ' + randomNumber;
+        });
+    </script>
+
+</body>
+</html>
